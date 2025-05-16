@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+  <h1>📊 Compliance Dashboard</h1>
+
+  
+
+  <section class="summary-section">
+    <h2>Contract Summary</h2>
+    <div id="contract-summary"></div>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 40px;">
+      <!-- Chart canvas in its own container -->
+       
+      <div>
+        <canvas id="chart-summary" width="400" height="200"></canvas>
+      </div>
+    
+      <!-- Totals shown beside the chart -->
+      <div id="chart-totals" style="font-family: sans-serif; font-size: 14px; line-height: 1.6;">
+        <p><strong>Total High Mismatches:</strong> <span id="totalHigh" style="color: red; font-weight: bold;">-</span></p>
+        <p><strong>Total Medium Mismatches:</strong> <span id="totalMedium" style="color: orange; font-weight: bold;">-</span></p>
+        <p><strong>Fulfilled Conditions:</strong> <span id="totalFulfilled" style="color: green; font-weight: bold;">-</span></p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="pdf-import">
+    <h2>Import Contract PDF</h2>
+    <div class="upload-container">
+      <input type="file" id="pdfUpload" accept="application/pdf"/>
+      <button id="processPdf" disabled>Detect Mismatches</button>
+      <div id="uploadStatus" class="status-message"></div>
+    </div>
+  </section>
+
+
+  <aside class="sidebar">
+    <h3>📚 Control Glossary</h3>
+    <div id="glossary"></div>
+  </aside>
+
+  <button id="viewHelp" style="position: fixed; top: 20px; right: 20px; padding: 8px 12px; font-size: 14px;">
+    ❓ Help & Tutorial
+  </button>
+  
+  <a href="view-scans.html" target="_blank">View All Scans (Backend)</a>
+  
+
+  <script src="libs/chart.umd.js"></script>
+  <script src="libs/compromise.min.js"></script>
+  <script src="libs/pdf.min.js"></script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

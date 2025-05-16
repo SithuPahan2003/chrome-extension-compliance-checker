@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  .framework {
+    background: #f7f7f7;
+    padding: 10px 15px;
+    border-left: 5px solid #007acc;
+    margin-bottom: 20px;
+  }
+
+  #helpSection h2 {
+    color: #2d89ef;
+  }
+
+
+
+  .collapsible {
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  .content {
+    max-height: 0;
+    padding: 0 18px;
+    font-size: 14px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ef7474;
+    transition: max-height 0.3s ease;
+  }
+
+  .content.open {
+    max-height: 600px; /* Large enough to fit the content */
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #515452;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  p{
+    text-align: justify;
+    font-size: 14px;
+  }

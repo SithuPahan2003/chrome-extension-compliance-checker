@@ -1,0 +1,73 @@
+[
+    {
+      "iso": "A.10.1.1, A.10.1.2",
+      "nist": "SC-12, SC-13",
+      "description": "Controls related to encryption of data at rest and in transit. These controls require organizations and their suppliers to have clear policies on when and how encryption is used, and to follow best practices for creating, storing, and destroying encryption keys. The standards also stress using trusted and validated encryption algorithms to avoid weak or outdated security. "
+    },
+    {
+      "iso": "A.9.1.1",
+      "nist": "AC-1",
+      "description": "Controls focused on access control policies and user authorization. These controls ensure organizations define and enforce who can access what data and systems. Suppliers must have clear access policies to prevent unauthorized access to sensitive information."
+    },
+    {
+      "iso": "A.15.1.1",
+      "nist": "SA-12",
+      "description": "Ensures third-party security requirements are established and maintained. These emphasize the need to manage and monitor vendor risks, ensuring suppliers follow proper security practices. Contracts should require vendors to comply with your org’s security standards."
+    },
+    {
+      "iso": "A.13.1.1",
+      "nist": "SC-7",
+      "description": "Network security controls, including protection from external threats. These controls aim to protect networks from unauthorized access, attacks, and leaks. Suppliers should have secure network architectures, firewalls, and intrusion detection in place."
+    },
+    {
+      "iso": "A.9.1.2",
+      "nist": "AC-6",
+      "description": "Enforces least privilege and restricts access based on business need. Both require limiting access based on roles and responsibilities, ensuring users (including vendor staff) only get the minimum access they need to perform their duties."
+    },
+    {
+      "iso": "A.5.1.1",
+      "nist": "PL-2",
+      "description": "Security policies and governance documentation for information security. These emphasize having a documented and communicated information security policy. Vendors must align with your policy or demonstrate equivalent internal standards."
+    },
+    {
+      "iso": "A.16.1.1",
+      "nist": "IR-4",
+      "description": "Incident response planning and handling of security events. Vendors must have procedures for detecting, reporting, and responding to security incidents. This ensures timely action when breaches or risks occur."
+    },
+    {
+      "iso": "A.18.1.3",
+      "nist": "MP-6",
+      "description": "Secure disposal and reuse of media to prevent data leakage.These require clear rules for how long data is kept and how it’s securely deleted. Suppliers should follow proper data lifecycle practices to avoid accidental exposure."
+    },
+    {
+      "iso": "A.12.4.1",
+      "nist": "AU-2",
+      "description": "Audit logging and monitoring of system activities and events. Both standards require auditing and logging of system activity. Suppliers should log access and changes to sensitive systems and regularly review these logs."
+    },
+    {
+      "iso": "A.17.1.1",
+      "nist": "CP-9",
+      "description": "Business continuity and backup procedures for critical information. These controls ensure vendors have disaster recovery and backup plans in place, so operations and data can be restored after disruptions."
+    },
+    {
+      "iso": "A.8.2.1",
+      "nist": "MP-4",
+      "description": "Information classification and labeling for secure data handling.They stress identifying and labeling data based on sensitivity (e.g., confidential, public). Suppliers must classify data properly and handle it accordingly."
+    },
+    {
+      "iso": "A.7.2.2",
+      "nist": "AT-2",
+      "description": "Security awareness and training for personnel.These require training employees (and vendor teams) to recognize and avoid security threats like phishing or social engineering."
+    },
+    {
+      "iso": "A.12.2.1",
+      "nist": "SI-3",
+      "description": "Protects against malicious code with preventive controls like antivirus. These controls focus on protecting devices and systems from viruses, malware, and unauthorized software. Vendors must use up-to-date endpoint protection. "
+    },
+    {
+      "iso": "A.9.4.2",
+      "nist": "IA-2",
+      "description": "User authentication mechanisms to control system access. They require using MFA to verify user identities, especially for access to sensitive systems. Vendor platforms should enforce MFA to reduce the risk of unauthorized access."
+    }
+  ]
+  

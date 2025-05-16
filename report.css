@@ -1,0 +1,130 @@
+/* code for before NLP*/
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Grid Layout*/ 
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; /* Ensure cards align at the top */
+    gap: 20px; /* Adds spacing between sections */
+}
+
+/* Supplier & Mismatch Sections */
+.suppliers-section, .mismatch-section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Supplier Cards */
+.supplier-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    width: 90%;
+    max-width: 500px;
+    list-style: none;
+    text-align: left;
+    border-left: 5px solid #28a745;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.supplier-card .cross {
+    border-left: 5px solid #dc3545;
+}
+
+/* Mismatch Alerts */
+.mismatch-alert {
+    background: #ffe5e5;
+    color: #b00020;
+    padding: 15px;
+    border-left: 5px solid #b00020;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    font-size: 14px;
+  line-height: 1.4;
+  
+  
+}
+
+.supplier-card, .mismatch-alert {
+    min-height: 140px; /* Adjust based on content */
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.supplier-card ul, .mismatch-alert ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.mismatch-alert strong {
+    font-weight: bold;
+}
+
+/* Icons */
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.check {
+    background: url('icons/check-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.cross {
+    background: url('icons/cross-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.alert {
+    background: url('icons/alert-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.mismatch-alert ul {
+    
+    margin-bottom: 4px;
+  padding-left: 0;
+}
+
+.mismatch-alert ul li {
+
+    margin-bottom: 4px;
+}
+
+.mismatch-alert .alert-icon {
+    margin-bottom: 6px; /* spacing between ⚠️ and title */
+}
+
+.mismatch-alert > :first-child {
+    margin-bottom: 50px; /* spacing below the ⚠️ icon */
+}
+
+/*.mismatch-alerts .alert {
+    background: #f8d7da;
+    padding: 15px;
+    border-left: 5px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}*/

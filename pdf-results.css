@@ -1,0 +1,136 @@
+/* === Button Style === */
+button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #515452;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #3d3d3d;
+  }
+  
+  /* === Page Base === */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    font-size: 14px;
+    margin: 50px auto;
+    max-width: 900px;
+  }
+  
+  /* === Headings === */
+  h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #34495e;
+    margin-top: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+  }
+  
+  /* === Summary Section === */
+  .contract-summary p {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+  
+  .suggestions ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .suggestions li {
+    margin-bottom: 5px;
+  }
+  
+  /* === Severity Classes === */
+  .high {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .medium {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .score {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* === Mismatches Section === */
+  #mismatch-summary,
+  #fulfilled-summary {
+    margin: 30px 0;
+  }
+  
+  #mismatch-list,
+  #fulfilled-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #mismatch-list li,
+  #fulfilled-list li {
+    margin-bottom: 12px;
+    padding-left: 26px;
+    position: relative;
+    line-height: 1.6;
+  }
+  
+  #mismatch-list li::before {
+    content: "❌";
+    position: absolute;
+    left: 0;
+    color: red;
+  }
+  
+  #fulfilled-list li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    color: green;
+  }
+  
+  /* === Labels & Mappings === */
+  .severity-label {
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .severity-high {
+    background-color: #ffdddd;
+    color: #c00;
+  }
+  
+  .severity-medium {
+    background-color: #ffe4b3;
+    color: #cc7a00;
+  }
+  
+  .iso-nist {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px;
+  }
+  

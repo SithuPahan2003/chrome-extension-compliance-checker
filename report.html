@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Compliance Monitor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="report.css">
+
+    
+
+</head>
+<body>
+    <h1>Supplier Compliance Monitor</h1>
+
+
+    <!-- Loading Indicator -->
+    <div id="loading" style="display: none; font-weight: bold; color: #007bff;">
+        🔍 Scanning contracts... Please wait.
+    </div>
+
+    <!-- Last Scan Time -->
+    <p id="last-scan" style="font-size: 14px; color: gray;"></p>
+
+    <!-- Scan Again Button -->
+    <button id="scanAgain">🔄 Scan Again</button>
+    <button id="downloadJson">Download JSON</button>
+    <button id="downloadPdf">Download PDF</button>
+    <button id="viewDashboard">📊 View Dashboard</button>
+
+
+
+
+
+    
+    <div class="grid-container">
+        <!--Left: Supplier Contracts -->
+        <div class="suppliers-section">
+            <h2>Supplier Contracts</h2>
+            <div id="suppliers-container" class="container"></div>
+        </div>
+
+         <!--Right: Mismatch Alerts -->
+        <div class="mismatch-section">
+            <h2>Mismatch Alerts</h2>
+            <div id="mismatch-alerts" class="container"></div>
+        </div>
+    </div>
+
+    
+    <script src="report.js"></script>
+</body>
+</html>

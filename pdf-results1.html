@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Scan Results</title>
+  <link rel="stylesheet" href="pdf-results.css" />
+</head>
+<body>
+  <h1>📄 Imported PDF Results</h1>
+
+  <!-- Summary Section -->
+  <section id="pdf-scan-summary" class="summary-section">
+    <!-- Summary (issues, top 3, score, suggestions) will be inserted by JS -->
+  </section>
+
+  <!-- Mismatches -->
+  <section id="pdf-mismatch-section">
+    <h2>❌ Mismatches Detected</h2>
+    <div id="pdf-mismatches"></div>
+  </section>
+
+  <!-- Fulfilled Controls -->
+  <section id="pdf-fulfilled-section">
+    <h2>✅ Fulfilled Conditions</h2>
+    <div id="pdf-fulfilled"></div>
+  </section>
+
+  <!-- Not Mentioned Controls -->
+  <section id="pdf-not-mentioned-section">
+    <h2 style="color: #888;">🚫 Not Mentioned Conditions</h2>
+    <div id="pdf-not-mentioned"></div>
+  </section>
+
+  <!-- Back button -->
+  <div style="text-align: center; margin-top: 40px;">
+    <button id="backToExtension">⬅️ Back to Extension</button>
+  </div>
+
+  <script src="pdf-results1.js"></script>
+</body>
+</html>
+

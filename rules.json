@@ -1,0 +1,152 @@
+[
+    { 
+        "keyword": "security policy|security clause|internal information security policy|information security policy|security documentation|security guidelines|security standard|security protocol|security framework|security requirements",
+        "specification": "Security Policy",
+        "reason": "Security policy clauses are not mandated.",
+        "suggestion": "Establish and document a comprehensive security policy that outlines responsibilities, acceptable use, and protection mechanisms.",
+        "severity": "high",
+        "iso27001": ["A.5.1.1"],
+        "nist": ["PL-2"]
+    },
+    {
+        "keyword": "supplier relationships|third-party vendors|third party|vendor security|external provider|outsourced|partner|subcontractor|supplier management|vendor management|third-party risk|external supplier|external vendor|external contractor|external party|not obligated|not required|not mandated|not necessary|not compulsory|not enforced|not provided|not included|not covered|not addressed|not present|not specified|not described|not detailed|not maintained|not ensured|not guaranteed|not supported",
+        "specification": "Supplier Relationships",
+        "reason": "No obligation to share detailed security certifications.",
+        "suggestion": "Require vendors to maintain and share detailed security certifications and compliance documentation.",
+        "severity": "high",
+        "iso27001": ["A.15.1.1"],
+        "nist": ["SA-12"]
+    },
+    {
+        "keyword": "network security|firewall|intrusion detection|IDS|IPS|network protection|perimeter security|network segmentation|network controls|network defense|network monitoring|network firewall|network intrusion|network safeguard",
+        "specification": "Network Security",
+        "reason": "No requirement for firewalls or intrusion detection systems.",
+        "suggestion": "Mandate the use of firewalls and intrusion detection/prevention systems (IDS/IPS).",
+        "severity": "high",
+        "iso27001": ["A.13.1.1"],
+        "nist": ["SC-7"]
+    },
+    {
+        "keyword": "data classification|sensitive data|restricted data|confidential data|data labeling|information classification|data categorization|data sensitivity|data type|data class|data group|data level",
+        "specification": "Data Classification",
+        "reason": "No mandatory process for classifying sensitive or restricted data.",
+        "suggestion": "Implement a mandatory data classification framework for sensitive and restricted data.",
+        "severity": "high",
+        "iso27001": ["A.8.2.1"],
+        "nist": ["MP-4"]
+    },
+    {
+        "keyword": "data retention|storage duration|retention period|data storage|data lifecycle|data deletion|data disposal|data archiving|data retention schedule|data retention policy|data retention rule|data retention requirement|does not specify|not specified|not described|not detailed|not maintained|not ensured|not guaranteed|not supported",
+        "specification": "Data Retention",
+        "reason": "No specification for data retention or storage durations.",
+        "suggestion": "Define clear data retention periods and storage duration requirements.",
+        "severity": "medium",
+        "iso27001": ["A.18.1.3"],
+        "nist": ["MP-6"]
+    },
+    {
+        "keyword": "physical security|data center|physical access|facility security|building security|site security|internal controls for physical|premises security|onsite security|physical protection|physical safeguard|physical barrier|physical control|no internal controls|not specified|not described|not detailed|not maintained|not ensured|not guaranteed|not supported",
+        "specification": "Physical Security",
+        "reason": "No internal controls specified for physical security.",
+        "suggestion": "Implement and document internal controls for physical security and data center access.",
+        "severity": "high",
+        "iso27001": ["A.11.1.1"],
+        "nist": ["PE-3"]
+    },
+    {
+        "keyword": "multi-factor authentication|MFA|2FA|two-factor authentication|strong authentication|multi factor|multi-factor|second factor|additional authentication|extra authentication|multi-step authentication",
+        "specification": "Multi-Factor Authentication",
+        "reason": "MFA not required for all access.",
+        "suggestion": "Require multi-factor authentication for all system access, not just administrative panels.",
+        "severity": "high",
+        "iso27001": ["A.9.4.2"],
+        "nist": ["IA-2"]
+    },
+    {
+        "keyword": "access control|authentication|user roles|role-based access|RBAC|user permissions|user access|access management|authorization|privilege management|access rights|access privileges|user credentials",
+        "specification": "Access Control",
+        "reason": "Lack of access control policies.",
+        "suggestion": "Implement role-based access control (RBAC) and require strong authentication for all users.",
+        "priority": true,
+        "severity": "high",
+        "id": "ACCESS_CONTROL",
+        "iso27001": ["A.9.1.1"],
+        "nist": ["AC-1"]
+    },
+    {
+        "keyword": "least privilege|privilege escalation|role-based access|minimum necessary access|minimum permissions|least access|least rights|least authority|least permissions|least access principle|least privilege principle",
+        "specification": "Principle of Least Privilege",
+        "reason": "No enforcement of the principle of least privilege.",
+        "suggestion": "Ensure users only have access to the resources necessary for their job function, and review permissions regularly.",
+        "priority": true,
+        "severity": "high",
+        "id": "PRIVILEGE_ESCALATION",
+        "iso27001": ["A.9.1.2"],
+        "nist": ["AC-6"]
+    },
+    {
+        "keyword": "incident handling|breach response|incident response|incident management|security incident|incident notification|incident reporting|incident plan|incident process|incident escalation|incident detection",
+        "specification": "Incident Handling",
+        "reason": "No guidelines for handling security incidents.",
+        "suggestion": "Develop an incident response plan that defines how to detect, report, and recover from security incidents.",
+        "severity": "medium",
+        "iso27001": ["A.16.1.1"],
+        "nist": ["IR-4"]
+    },
+    {
+        "keyword": "audit logs|logging|monitoring|log management|log retention|log review|log analysis|system logs|event logs|activity logs|security monitoring|continuous monitoring|log collection|log storage",
+        "specification": "Logging & Monitoring",
+        "reason": "No mention of logging or monitoring activities.",
+        "suggestion": "Enable centralized logging and continuous monitoring of key systems to detect suspicious activity.",
+        "severity": "medium",
+        "iso27001": ["A.12.4.1"],
+        "nist": ["AU-2"]
+    },
+    {
+        "keyword": "backup|disaster recovery|business continuity|data backup|system restore|recovery point|restore point|data recovery|backup cycle|backup schedule|backup retention|backup plan|backup policy|backup process",
+        "specification": "Backup & Recovery",
+        "reason": "Lack of backup and disaster recovery strategies.",
+        "suggestion": "Implement regular automated backups and test your disaster recovery plan at least annually.",
+        "severity": "medium",
+        "iso27001": ["A.17.1.1"],
+        "nist": ["CP-9"]
+    },
+    {
+        "keyword": "phishing|social engineering|security awareness|security training|security education|security program|awareness program|employee training|security best practices|security knowledge|security campaign",
+        "specification": "Security Awareness Training",
+        "reason": "No mention of employee security awareness training programs.",
+        "suggestion": "Conduct regular training on phishing, social engineering, and security best practices for all employees.",
+        "severity": "medium",
+        "iso27001": ["A.7.2.2"],
+        "nist": ["AT-2"]
+    },
+    {
+        "keyword": "encryption|AES|RSA|data encryption|encryption standard|encryption protocol|encryption requirement|encryption policy|encrypted data|encryption key|encryption method|encryption technology|encryption algorithm",
+        "specification": "Data Encryption",
+        "reason": "No mention of encryption requirements.",
+        "suggestion": "Enforce strong encryption for data at rest and in transit using standards like AES-256 or RSA-2048.",
+        "priority": true,
+        "severity": "high",
+        "id": "ENCRYPTION",
+        "iso27001": ["A.10.1.1", "A.10.1.2"],
+        "nist": ["SC-12", "SC-13"]
+    },
+    {
+        "keyword": "endpoint security|antivirus|endpoint incidents|malware protection|EDR|endpoint detection|device security|workstation security|server security|endpoint protection|endpoint management|endpoint monitoring",
+        "specification": "Endpoint Security",
+        "reason": "No requirement to report endpoint incidents.",
+        "suggestion": "Mandate comprehensive endpoint security solutions and incident reporting requirements.",
+        "severity": "medium",
+        "iso27001": ["A.12.2.1"],
+        "nist": ["SI-3"]
+    },
+    {
+        "keyword": "compliance review|audit|disclosure|compliance audit|compliance assessment|audit findings|compliance reporting|compliance check|compliance evaluation|compliance verification|compliance monitoring",
+        "specification": "Compliance Review",
+        "reason": "Audit findings not required to be disclosed unless critical.",
+        "suggestion": "Require full disclosure of all audit findings, not just critical ones.",
+        "severity": "medium",
+        "iso27001": ["A.18.2.1"],
+        "nist": ["CA-2"]
+    }
+]

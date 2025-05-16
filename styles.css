@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.popup-container {
+    width: 250px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 14px;
+    color: green;
+    margin-top: 10px;
+}
+
+.popup-alert {
+    background: #ffe5e5;
+    color: #b00020;
+    padding: 10px;
+    border-left: 4px solid #b00020;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.popup-alert strong {
+    font-weight: bold;
+}
